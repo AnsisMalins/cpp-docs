@@ -58,6 +58,8 @@ Enables minimal rebuild, which determines whether C++ source files that include 
   
  Because the incremental linker does not support the Windows metadata included in .obj files by using the [/ZW (Windows Runtime Compilation)](../../build/reference/zw-windows-runtime-compilation.md) option, the **/Gm** option is incompatible with **/ZW**.  
   
+ **/Gm** will be ignored unless one of [/Zi or /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md) is also specified.
+  
 ### To set this compiler option in the Visual Studio development environment  
   
 1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
